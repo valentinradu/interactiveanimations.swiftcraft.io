@@ -18,7 +18,6 @@ struct InteractiveAnimationsApp: App {
 
 struct ContentView: View {
     @State var isPresented: Bool = false
-    @State var isPresented2: Bool = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -27,10 +26,6 @@ struct ContentView: View {
                 .inlineSheet(isPresented: $isPresented) {
                     Rectangle()
                         .fill(.pink)
-//                        .inlineSheet(isPresented: $isPresented2) {
-//                            Rectangle()
-//                                .fill(.yellow)
-//                        }
                 }
             HStack {
                 Spacer()
